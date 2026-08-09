@@ -4,13 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hompage</title>
+    <style>
+        h1 {
+            color: aqua;  
+        }
+        body{
+            padding: 20px;
+        }
+        div.content{
+        background-color: #a28089;
+
+        padding: 25px;
+
+        margin: 30px auto;
+
+        border-radius: 15px; 
+        max-width: 400px;      
+        text-align: center; 
+        }
+        .events {
+        background-color: rgb(136, 155, 156);
+        width: 280px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+        }
+        .container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap:wrap;
+        }
+        .container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        }
+        .navbar{
+            color: aqua;
+        }
+        .navbar a{
+            font-size: 25px;
+            display: inline;
+            margin: 20px;
+            text-decoration: none;
+
+        }
+        .nav-home{
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
-    <h1 style="color: blue; font-size: 90px;">This is the Hompage</h1>
+    <h1 style="font-size: 90px;">This is the Hompage</h1>
     <br> 
-    <a href="homepage.html" style="color: blue;font-size: 25px; display: inline; margin: 20px;">Home</a>
-    <a href="#" style="color: green;font-size: 25px; display: inline;  margin: 20px;">Insert Event</a>
-    <a href="contact_us.html" style="color: red;font-size: 25px; display: inline; margin: 20px;">Contact Us</a>
+    <nav class="navbar">
+        <a href="homepage.html" class="nav-home">Home</a>
+        <a href="#" class="nav-event">Insert Event</a>
+        <a href="contact_us.html" class="nav-contact">Contact Us</a>
+    </nav>
+
+    <div class = "container">   
+    <div class="events">
+        <h3>Event 1</h3>
+        <img src="images/placeholder.jpg" alt="Gaming Image 1" width="400">
+        <p>Some Text Goes Here</p>
+        <button>Click Me</button>
+    </div>
+    <div class="events">
+        <h3>Event 2</h3>
+        <img src="images/placeholder.jpg" alt="Basketball Image " width="400">
+        <p>Some Text Goes Here</p>
+        <button>Click Me</button>
+
+    </div>
+    <div class="events">
+        <h3>Event 3</h3>
+        <img src="images/placeholder.jpg" alt="Board Games Image " width="400">
+        <p>Some Text Goes Here</p>
+        <button>Click Me</button>
+
+    </div>
+    <div class="events">
+        <h3>Event 4</h3>
+        <img src="images/placeholder.jpg" alt="Board Games Image " width="400">
+        <p>Some Text Goes Here</p>
+        <button>Click Me</button>
+
+    </div>
+    <div class="events">
+        <h3>Event 5</h3>
+        <img src="images/placeholder.jpg" alt="Board Games Image " width="400">
+        <p>Some Text Goes Here</p>
+        <button>Click Me</button>
+
+    </div>
+    <div class="events">
+        <h3>Event 6</h3>
+        <img src="images/placeholder.jpg" alt="Board Games Image " width="400">
+        <p>Some Text Goes Here</p>
+        <button>Click Me</button>
+
+    </div>
+    
+    </div>
 
   <!-- <p style="color: rgb(255, 94, 0); font-size: 90px;">This text is orange and 90px wide.</p> -->  
     <footer>
