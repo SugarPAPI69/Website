@@ -9,7 +9,8 @@
             color: aqua;  
         }
         body{
-            padding: 20px;
+            padding: 0px;
+            margin: 0px;
         }
         div.content{
         background-color: #a28089;
@@ -42,9 +43,6 @@
         height: auto;
         border-radius: 10px;
         }
-        .navbar{
-            color: aqua;
-        }
         .navbar a{
             font-size: 25px;
             display: inline;
@@ -55,14 +53,36 @@
         .nav-home{
             color: red;
         }
+        .navbar a{
+            text-decoration: none;
+            color: azure;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+        .navbar ul{
+            list-style-type:none;
+            background-color: #353434;
+            padding: 0%;
+            margin: 0%;
+            overflow: hidden;
+        }
+        .navbar a:hover{
+            background-color: #222222;
+        }
+        .navbar li{
+            float: left;
+        }
 
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="homepage.html" class="nav-home">Home</a>
-        <a href="#" class="nav-event">Insert Event</a>
-        <a href="contact_us.html" class="nav-contact">Contact Us</a>
+        <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="#">Insert Event</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
     </nav>
     <h1 style="font-size: 90px;">This is the Hompage</h1>
     <div class = "container">   

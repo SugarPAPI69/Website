@@ -5,15 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar a{
+            font-size: 25px;
+            display: inline;
+            margin: 20px;
+            text-decoration: none;
+
+        }
+        .nav-home{
+            color: red;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: azure;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+        .navbar ul{
+            list-style-type:none;
+            background-color: #353434;
+            padding: 0%;
+            margin: 0%;
+            overflow: hidden;
+        }
+        .navbar a:hover{
+            background-color: #222222;
+        }
+        .navbar li{
+            float: left;
+        }
+        h4{
+            text-align: center;
+            font-size: 45px;
+        }
     </style>
 </head>
 <body>
-    <h1 style="color: red; font-size: 90px;">This is the Contact Us page after init</h1>
-    <br>
-    <a href="homepage.html" style="color: blue; font-size: 25px; display: inline; margin: 20px;">Home</a>
-    <a href="#" style="color: green;font-size: 25px; display: inline; margin: 20px;">Insert Event</a>
-    <a href="contact_us.html" style="color: red;font-size: 25px; display: inline; margin: 20px;">Contact Us</a>
+    <nav class="navbar">
+        <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="#">Insert Event</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1 style="color: red; font-size: 90px;">This is the Contact Us page</h1>
+    <h4>Forms Should be here</h4>
     <footer>
         <p>Footer</p>
         <p> &copy; Explore Tech Events <a href="https://www.w3.org/standards/webdesign/accessibility">W3C accessibility link</a></p>
