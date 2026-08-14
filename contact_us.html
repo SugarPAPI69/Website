@@ -20,6 +20,20 @@
             min-height: 100vh;
             font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
+        .site-header {
+         display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 30px;
+        background-color: #0D9488;
+        border-bottom: 1px solid #E2E8F0;
+        }
+        .site-name {
+        margin: 0;
+        font-size: 28px;
+        color: #1E1E1E;
+        font-weight: bold;
+        }
          .container {
             background-color: #0D9488;
             margin-top: 30px;
@@ -109,11 +123,20 @@
         }
         textarea, input {
     font-family: Arial, sans-serif;
-}
+        }
+        h1 {
+            color: #0D9488;  
+            text-align: center;
+            font-size: 70px;
+        }
 
     </style>
 </head>
 <body>
+     <header class="site-header">
+        <div class="logo-placeholder">LOGO should be placed here</div>
+        <h2 class="site-name">Explore Tech Events</h2>
+    </header>
     <nav class="navbar">
         <ul>
         <li><a href="homepage.html">Home</a></li>
@@ -121,7 +144,7 @@
         <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
     </nav>
-    <h4>Contact Us</h4>
+    <h1>Contact Us</h1>
     <div class = "container">
     <form>
         <label for="fname">First Name</label> <br>
