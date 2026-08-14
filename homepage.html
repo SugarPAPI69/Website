@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hompage</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         h1 {
-            color: rgb(111, 158, 189);  
+            color: #0D9488;  
+            text-align: center;
         }
         body{
             padding: 0px;
             margin: 0px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             background-color: #F8FAFC;
             color: #334155;
+            font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             
         }
         footer{
-             background-color: #353434;
+             background-color: #1E1E1E;
             padding: 0%;
             margin: 0%;
-            color: white;
+            color: FFFFFF;
+            margin-top: auto;
+        }
+        footer a {
+            color: #F59E0B;
         }
         div.content{
-        background-color: #a28089;
+        background-color: #0D9488;
 
         padding: 25px;
 
@@ -31,22 +44,30 @@
         border-radius: 15px; 
         max-width: 400px;      
         text-align: center; 
+         color: #F0FDFA;
         }
         .events {
-        background-color: rgb(136, 155, 156);
+        background-color: #FFFFFF;
+        border: 1px solid #CCFBF1;
         width: 400px;
-        padding: 50px;
-        margin-bottom: 40px;
+        padding: 30px;
+        margin-bottom: 0;
         text-align: center;
         border-radius: 15px;
-        box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        }
+        .events h3 {
+            color: #0D9488;
         }
         .container {
         margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        flex-wrap:wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1300px;
+        padding: 0 25px;
+         gap: 35px;
+         align-self: center;
+         margin-bottom: 30px;
         }
         .container img {
         width: 100%;
@@ -61,24 +82,24 @@
 
         }
         .nav-home{
-            color: red;
+            color: #F59E0B;
         }
         .navbar a{
             text-decoration: none;
-            color: azure;
+            color: #FFFFFF;
             padding: 15px;
             display: block;
             text-align: center;
         }
         .navbar ul{
             list-style-type:none;
-            background-color: #353434;
+            background-color: #1E1E1E;
             padding: 0%;
             margin: 0%;
             overflow: hidden;
         }
         .navbar a:hover{
-            background-color: #222222;
+            background-color: #0D9488;
         }
         .navbar li{
             float: left;
@@ -94,47 +115,66 @@
         <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
     </nav>
-    <h1 style="font-size: 90px;">This is the Hompage</h1>
+    <h1>Upcoming Technological Workshops & Networking Events</h1>
+
     <div class = "container">   
     <div class="events">
         <h3>Event 1</h3>
         <img src="images/placeholder.jpg" alt="Event Image 1" width="400">
         <p>Some Text Goes Here</p>
-        <button>Click Me</button>
+        <p>Event Description Goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tortor quis
+             dolor sodales varius. Curabitur viverra placerat ante. Aliquam consectetur leo id mi dapibus
+              ultricies. Maecenas ac turpis consectetur,</p>
     </div>
     <div class="events">
         <h3>Event 2</h3>
         <img src="images/placeholder.jpg" alt="Event Image 2 " width="400">
         <p>Some Text Goes Here</p>
-        <button>Click Me</button>
+       <p>Event Description Goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tortor quis
+             dolor sodales varius. Curabitur viverra placerat ante. Aliquam consectetur leo id mi dapibus
+              ultricies. Maecenas ac turpis consectetur,</p>
 
     </div>
     <div class="events">
         <h3>Event 3</h3>
         <img src="images/placeholder.jpg" alt="Event Image 3 " width="400">
         <p>Some Text Goes Here</p>
-        <button>Click Me</button>
+        <p>Event Description Goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tortor quis
+             dolor sodales varius. Curabitur viverra placerat ante. Aliquam consectetur leo id mi dapibus
+              ultricies. Maecenas ac turpis consectetur,</p>
 
     </div>
     <div class="events">
         <h3>Event 4</h3>
         <img src="images/placeholder.jpg" alt="Board Games Image " width="400">
         <p>Some Text Goes Here</p>
-        <button>Click Me</button>
+        <p>Event Description Goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tortor quis
+             dolor sodales varius. Curabitur viverra placerat ante. Aliquam consectetur leo id mi dapibus
+              ultricies. Maecenas ac turpis consectetur,</p>
 
     </div>
     <div class="events">
         <h3>Event 5</h3>
         <img src="images/placeholder.jpg" alt="Board Games Image " width="400">
         <p>Some Text Goes Here</p>
-        <button>Click Me</button>
+       <p>Event Description Goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tortor quis
+             dolor sodales varius. Curabitur viverra placerat ante. Aliquam consectetur leo id mi dapibus
+              ultricies. Maecenas ac turpis consectetur,</p>
 
     </div>
     <div class="events">
         <h3>Event 6</h3>
         <img src="images/placeholder.jpg" alt="Board Games Image " width="400">
         <p>Some Text Goes Here</p>
-        <button>Click Me</button>
+      <p>Event Description Goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tortor quis
+             dolor sodales varius. Curabitur viverra placerat ante. Aliquam consectetur leo id mi dapibus
+              ultricies. Maecenas ac turpis consectetur,</p>
 
     </div>
     
