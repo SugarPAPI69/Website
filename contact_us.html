@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
     <style>
         html {
         margin: 0;
@@ -143,7 +152,7 @@
     </nav>
     <h1>Contact Us</h1>
     <div class = "container">
-    <form>
+    <form name="myForm">
         <label for="fname">First Name</label> <br>
         <input type="text" id="fname" name="fname" placeholder = "Enter your first name"> <br>
         <label for="lname">Last Name</label> <br>
