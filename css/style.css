@@ -1,0 +1,119 @@
+
+        html {
+            height: 100%;
+            margin: 0;
+        }
+        h1 {
+            color: #0D9488;  
+            text-align: center;
+            font-size: 70px;
+        }
+        .logo-placeholder {
+            color: #F0FDFA;
+        }
+        .site-header {
+         display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 30px;
+        background-color: #0D9488;
+       
+        }
+        .site-name {
+        margin: 0;
+        font-size: 28px;
+        color: #1E1E1E;
+        font-weight: bold;
+         color: #FFFFFF;
+        }
+        body{
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #F8FAFC;
+            color: #334155;
+            font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            
+        }
+        footer{
+             background-color: #1E1E1E;
+            padding: 0%;
+            margin: 0%;
+            color: #FFFFFF;
+            margin-top: auto;
+        }
+        footer a {
+            color: #F59E0B;
+        }
+        div.content{
+        background-color: #0D9488;
+
+        padding: 25px;
+
+        margin: 30px auto;
+
+        border-radius: 15px; 
+        max-width: 400px;      
+        text-align: center; 
+         color: #F0FDFA;
+        }
+        .events {
+        background-color: #FFFFFF;
+        border: 1px solid #CCFBF1;
+        width: 400px;
+        padding: 30px;
+        margin-bottom: 0;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        }
+        .events h3 {
+            color: #0D9488;
+        }
+        .container {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1300px;
+        padding: 0 25px;
+         gap: 35px;
+         align-self: center;
+         margin-bottom: 30px;
+        }
+        .container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        }
+        .navbar a{
+            font-size: 25px;
+            display: inline;
+            margin: 20px;
+            text-decoration: none;
+
+        }
+        .nav-home{
+            color: #F59E0B;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #FFFFFF;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+        .navbar ul{
+            list-style-type:none;
+            background-color: #1E1E1E;
+            padding: 0%;
+            margin: 0%;
+            overflow: hidden;
+        }
+        .navbar a:hover{
+            background-color: #0D9488;
+        }
+        .navbar li{
+            float: left;
+        }
