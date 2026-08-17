@@ -7,11 +7,35 @@
     <script>
 function validateForm() {
   let x = document.forms["myForm"]["fname"].value;
+  let y = document.forms["myForm"]["lname"].value;
+  let z = document.forms["myForm"]["email"].value;
+  let i = document.forms["myForm"]["subjects"].value;
+  let o = document.forms["myForm"]["textfields"].value;
   if (x == "") {
-    alert("Name must be filled out");
+    alert("First Name must be filled out and cant be left blank");
     return false;
   }
+  if (y == "") {
+    alert("Last Name must be filled out and cant be left blank");
+    return false;
+  }
+  if (z == "") {
+    alert("Email must be filled out and cant be left blank");
+    return false;
+  }
+  if (i == "") {
+    alert("Subject cant be left blank, You have to choose.");
+    return false;
+  }
+  if (o == "") {
+    alert("Text fields cant be left blank");
+    return false;
+  }
+  else {
+    alert("Thanks for Submitting")
+  }
 }
+
 </script>
     <style>
         html {
@@ -84,13 +108,13 @@ function validateForm() {
             color: #F59E0B;
         }
         .navbar a {
-            text-decoration: none;
-            color: #FFFFFF;
-            padding: 15px;
-            display: block;
-            text-align: center;
-            font-size: 20px;
-        }
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
         .navbar ul{
             list-style-type:none;
             background-color: #1E1E1E;
@@ -152,21 +176,20 @@ function validateForm() {
     </nav>
     <h1>Contact Us</h1>
     <div class = "container">
-    <form name="myForm">
+    <form name="myForm" onsubmit="return validateForm()">
         <label for="fname">First Name</label> <br>
         <input type="text" id="fname" name="fname" placeholder = "Enter your first name"> <br>
         <label for="lname">Last Name</label> <br>
-        <input type="text" id="lname" name="lname"placeholder = "Enter your last  name"> <br>
+        <input type="text" id="lname" name="lname" placeholder = "Enter your last  name"> <br>
         <label for="email">Email</label> <br>
-        <input type="text" id="email" name="email"placeholder = "Enter your email address"> <br>
-        <label for="subject">Subject</label> <br>
-        <input list="subjects" name="subjects" placeholder="Feedback or Suggestions">
+        <input type="text" id="email" name="email" placeholder = "Enter your email address"> <br>
+        <label for="subjects">Subject</label> <br>
+        <input list="subjects" id="subject" name="subjects" placeholder="Feedback or Suggestions">
         <datalist id="subjects">
             <option value="Feedback">
             <option value="Suggestions">
         </datalist> <br>
-        <label for="Textfields" >Text Field</label> <br>
-
+        <label for="textfields">Text Field</label>
         <textarea id="textfields" name="textfields" rows="6" cols="50" placeholder = "Enter your enquiry here."></textarea>
         <button>Click to Submit</button>
     </form>
